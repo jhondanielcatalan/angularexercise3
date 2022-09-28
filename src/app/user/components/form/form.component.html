@@ -1,0 +1,31 @@
+<mat-card>
+    <mat-card-content>
+    <div class="header"><h2>USER PROFILE</h2></div>
+<form class="example-form" [formGroup]="userForm" (ngSubmit)="submit()">
+    <div class="form-group">
+        <mat-label for="Email">E-mail</mat-label>
+        <br>
+        <input matInput  formControlName="email" type="email" id="email" class="form-control" placeholder="juandelacruz@gmail.com" required>
+        <mat-error id="email"></mat-error>
+    </div>
+    <div class="form-group">
+        <mat-label for="Name">Name</mat-label>
+        <br>
+        <input matInput formControlName="name" type="text" id="name" class="form-control" placeholder="Juan Dela Cruz" required>
+    </div>
+    <div class="form-group" mat-form-field class="example-full-width" appearance="fill">
+        <mat-label for="Bio">Enter Bio</mat-label>
+        <br>
+        <textarea formControlName="bio" type="textarea" id="bio" class="form-control" required placeholder="Something about yourself..."></textarea>
+    </div>
+    <div class="form-group">
+        <mat-label for="Active">Active</mat-label>
+        <br>
+        <input matInput formControlName="active" type="text" id="active" class="form-control" required placeholder="Yes/No">
+    </div>
+    <div class="form-group">
+        <button mat-raised-button color="primary" type="submit">Submit</button>
+    </div>
+</form>
+</mat-card-content>
+</mat-card>

@@ -1,0 +1,12 @@
+<mat-card>
+  <header><h2>Blog Item {{blog?.id}}</h2></header>
+  <span style="text-align: justify;">
+  <p><b>Title:  </b>{{blog?.title}}<br>
+    <b>Description:  </b>{{blog?.description}}<br>
+    <b>Author:  </b>{{blog?.author}}<br>
+    <b>Comments:  </b>{{blog?.comments}}<br>
+        </p>
+      </span>
+      <button mat-raised-button color="primary" (click)="editItem()">Edit</button>
+    <button mat-raised-button color="warn" (click)="deleteItem()">Delete</button>
+</mat-card>

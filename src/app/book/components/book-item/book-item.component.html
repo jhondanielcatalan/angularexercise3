@@ -1,0 +1,9 @@
+    <mat-card>
+      <header><h2>Book Item {{book?.id}}</h2></header>
+      <p><b>Book:   </b>{{book?.name}}<br>
+      <b>Author(s):   </b>{{book?.authors}}<br>
+      <b>ISBN:   </b>{{book?.isbn}}<br>
+    </p>
+        <button mat-raised-button color="primary" (click)="editItem()">Edit</button>
+        <button mat-raised-button color="warn" (click)="deleteItem()">Delete</button>
+    </mat-card>
